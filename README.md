@@ -1,4 +1,4 @@
-# Parallel_Computing_project1
+# Parallel_Computing_projects
 
 Compile the Code:
 
