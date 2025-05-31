@@ -1,6 +1,6 @@
 # Parallel_Computing_projects
 
--> PROJECT #1 
+## PROJECT #1 
 This project implements and compares sequential and parallel versions of the Sieve of Eratosthenes algorithm for finding prime numbers up to a given integer N.
 The parallel version uses the Pthreads library and employs a block decomposition strategy.
 
