@@ -23,3 +23,26 @@ Parallel:
 
 ### Custom input: (e.g., n = 10000000, 8 threads):
  ./parallel 10000000 8
+
+ ### Repository Structure
+
+```
+project1/
+├── src/                     # Source code files
+│   ├── sequential.cpp       # Sequential implementation
+│   └── parallel.cpp         # Parallel (Pthreads) implementation
+├── docs/                    # Documentation and graphs
+│   ├── report.pdf           # Detailed project report
+│   └── graphs/              # Performance graphs
+│       ├── time_vs_threads_N100000.png
+│       ├── speedup_vs_threads_N100000.png
+│       ├── time_vs_threads_N1000000.png
+│       ├── speedup_vs_threads_N1000000.png
+│       ├── time_vs_threads_N10000000.png
+│       └── speedup_vs_threads_N10000000.png
+├── results/                 # Raw results 
+│   ├── timing_data.csv      # Raw benchmark timing data
+│   ├── cpu_info.txt         # CPU information (from lscpu)
+│   └── os_info.txt          # OS information (from uname -a)
+└── README.md                # This file
+```
