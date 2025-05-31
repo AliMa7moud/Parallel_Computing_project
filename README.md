@@ -1,15 +1,37 @@
 # Parallel_Computing_projects
 
-PROJECT #1 
+-> PROJECT #1 
+This project implements and compares sequential and parallel versions of the Sieve of Eratosthenes algorithm for finding prime numbers up to a given integer N.
+The parallel version uses the Pthreads library and employs a block decomposition strategy.
 
-Compile the Code:
+# Repository Structure
+
+project1/
+├── src/                     # Source code files
+│   ├── sequential.cpp       # Sequential implementation
+│   └── parallel.cpp         # Parallel (Pthreads) implementation
+├── docs/                    # Documentation and graphs
+│   ├── report.pdf           # Detailed project report
+│   └── graphs/              # Performance graphs
+│       ├── time_vs_threads_N100000.png
+│       ├── speedup_vs_threads_N100000.png
+│       ├── time_vs_threads_N1000000.png
+│       ├── speedup_vs_threads_N1000000.png
+│       ├── time_vs_threads_N10000000.png
+│       └── speedup_vs_threads_N10000000.png
+├── results/                 # Raw results 
+│   ├── timing_data.csv      # Raw benchmark timing data
+│    
+└── README.md                # This file
+
+# Compile the Code:
 For the sequential version:
 g++ -o sequential sequential.cpp 
 
 For the parallel version:
 g++ -o parallel parallel.cpp -pthread
 
-Run the Programs:
+# Run the Programs:
 Sequential:
 ./sequential
 
