@@ -3,14 +3,20 @@
 Compile the Code:
 
 For the sequential version:
-g++ -o sieve_seq sequential.cpp 
+g++ -o sequential sequential.cpp 
 
 For the parallel version:
-g++ -o sieve_par parallel.cpp -pthread
+g++ -o parallel parallel.cpp -pthread
 
 Run the Programs:
 Sequential:
-./sieve_seq
+./sequential
 
 Parallel:
-./sieve_par
+./parallel
+
+Default values (n = 1000000, threads = 4):
+./parallel
+
+ Custom input: (e.g., n = 10000000, 8 threads):
+ ./parallel 10000000 8
