@@ -42,7 +42,5 @@ project1/
 │       └── speedup_vs_threads_N10000000.png
 ├── results/                 # Raw results 
 │   ├── timing_data.csv      # Raw benchmark timing data
-│   ├── cpu_info.txt         # CPU information (from lscpu)
-│   └── os_info.txt          # OS information (from uname -a)
 └── README.md                # This file
 ```
