@@ -20,8 +20,7 @@ project1/
 │       ├── time_vs_threads_N10000000.png
 │       └── speedup_vs_threads_N10000000.png
 ├── results/                 # Raw results 
-│   ├── timing_data.csv      # Raw benchmark timing data
-│    
+│   ├── timing_data.csv      # Raw benchmark timing data 
 └── README.md                # This file
 
 # Compile the Code:
