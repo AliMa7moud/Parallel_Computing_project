@@ -1,7 +1,8 @@
 # Parallel_Computing_projects
 
-Compile the Code:
+PROJECT #1 
 
+Compile the Code:
 For the sequential version:
 g++ -o sequential sequential.cpp 
 
