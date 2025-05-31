@@ -1,4 +1,4 @@
-# Parallel_Computing_projects
+# Parallel_Computing_project
 
 ## PROJECT #1 
 This project implements and compares sequential and parallel versions of the Sieve of Eratosthenes algorithm for finding prime numbers up to a given integer N.
@@ -27,7 +27,7 @@ Parallel:
  ### Repository Structure
 
 ```
-project1/
+Parallel_Computing_project_1/
 ├── src/                     # Source code files
 │   ├── sequential.cpp       # Sequential implementation
 │   └── parallel.cpp         # Parallel (Pthreads) implementation
