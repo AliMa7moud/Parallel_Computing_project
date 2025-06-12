@@ -17,7 +17,7 @@ int main() {
     }
     isPrime[0] = isPrime[1] = false;
 
-    // Timing start
+    // ------Timing start-------
     struct timespec start_time, end_time;
     clock_gettime(CLOCK_MONOTONIC, &start_time);
 
