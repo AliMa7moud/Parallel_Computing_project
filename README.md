@@ -27,7 +27,7 @@ Parallel:
  ### Repository Structure
 
 ```
-Parallel_Computing_project_1/
+Parallel_Computing_project_/
 ├── src/                     # Source code files
 │   ├── sequential.cpp       # Sequential implementation
 │   └── parallel.cpp         # Parallel (Pthreads) implementation
