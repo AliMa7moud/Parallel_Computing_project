@@ -12,10 +12,10 @@ For the parallel version:
 g++ -o parallel parallel.cpp -pthread
 
 ### Run the Programs:
-####Sequential:
+#### Sequential:
 ./sequential
 
-####Parallel:
+#### Parallel:
 ./parallel
 
 ### Default values (n = 1000000, threads = 4):
@@ -65,13 +65,13 @@ g++ -fopenmp -o openmp openmp.cpp
  ![speedup_vs_input_size](https://github.com/user-attachments/assets/3734caf3-168c-4c1e-baae-2295e18b45b9)
 
 ### Any Challenges Faced and How You Overcame Them
-- ####Race Conditions with vector<bool>
+- #### Race Conditions with vector<bool>
   Switched to std::vector<char>, which offers byte-level storage and thread-safe access when each thread writes to separate indices.
-- ####Uneven Work Distribution Across Threads
+- #### Uneven Work Distribution Across Threads
   Used #pragma omp parallel for schedule(dynamic) to allow OpenMP to dynamically assign loop chunks to threads, improving workload balance.
-- ####Correctness Validation
+- #### Correctness Validation
   Extensively tested both versions on multiple input sizes (e.g., 1e5, 1e6, 1e7) and compared counts and printed primes to verify correctness.
-- ####Safe Output in Parallel Regions
+- #### Safe Output in Parallel Regions
   Wrapped std::cout inside #pragma omp critical to ensure only one thread prints at a time.
   
 
