@@ -59,10 +59,14 @@ g++ -fopenmp -o openmp openmp.cpp
  
  #### Graphs
  Time vs input size: 
- ![time_vs_input_size](https://github.com/user-attachments/assets/5ddb151f-b0f7-499b-bf60-06608eb00f7f)
+ 
+![time_vs_input_size_dark](https://github.com/user-attachments/assets/89c75db6-b3b4-49e9-b1ef-cfc8cc86feec)
+
 
  Speed up vs input size: 
- ![speedup_vs_input_size](https://github.com/user-attachments/assets/3734caf3-168c-4c1e-baae-2295e18b45b9)
+ 
+![speedup_vs_input_size_dark](https://github.com/user-attachments/assets/c8120c55-f49a-4881-9048-dcd906f757d5)
+
 
 ### Any Challenges Faced and How You Overcame Them
 - #### Race Conditions with vector<bool>
