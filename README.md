@@ -12,10 +12,10 @@ For the parallel version:
 g++ -o parallel parallel.cpp -pthread
 
 ### Run the Programs:
-Sequential:
+####Sequential:
 ./sequential
 
-Parallel:
+####Parallel:
 ./parallel
 
 ### Default values (n = 1000000, threads = 4):
@@ -34,19 +34,19 @@ The parallel version first generates all base primes up to √n sequentially. Th
 This approach avoids race conditions and achieves speedup by assigning disjoint work chunks to each thread.
 
 ### Compile and Run Instructions
-Compile: 
+#### Compile: 
 g++ -fopenmp -o openmp openmp.cpp
 
-Run with default n:
+#### Run with default n:
 ./openmp
 
 ### Performance Results
 #### Hardware Used
-CPU Model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz   2.00 GHz
-Cores: 4
-Threads: 8 
-RAM: 8 GB
-OS: Kali Linux/Windows 11 Pro 
+##### CPU Model: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz   2.00 GHz
+##### Cores: 4
+##### Threads: 8 
+##### RAM: 8 GB
+##### OS: Kali Linux/Windows 11 Pro 
 
 ####  Tested Input Sizes
 | n          | Threads | Sequential Time (ms) | OpenMP Time (ms) | Speedup |
@@ -65,13 +65,13 @@ OS: Kali Linux/Windows 11 Pro
  ![speedup_vs_input_size](https://github.com/user-attachments/assets/3734caf3-168c-4c1e-baae-2295e18b45b9)
 
 ### Any Challenges Faced and How You Overcame Them
-- Race Conditions with vector<bool>
+- ####Race Conditions with vector<bool>
   Switched to std::vector<char>, which offers byte-level storage and thread-safe access when each thread writes to separate indices.
-- Uneven Work Distribution Across Threads
+- ####Uneven Work Distribution Across Threads
   Used #pragma omp parallel for schedule(dynamic) to allow OpenMP to dynamically assign loop chunks to threads, improving workload balance.
-- Correctness Validation
+- ####Correctness Validation
   Extensively tested both versions on multiple input sizes (e.g., 1e5, 1e6, 1e7) and compared counts and printed primes to verify correctness.
-- Safe Output in Parallel Regions
+- ####Safe Output in Parallel Regions
   Wrapped std::cout inside #pragma omp critical to ensure only one thread prints at a time.
   
 
